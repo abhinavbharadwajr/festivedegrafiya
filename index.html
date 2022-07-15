@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            var requirejs = {
+                onNodeCreated: function (node) {
+                    var src = node.getAttribute('src');
+                    var shouldIgnore = ['googletagmanager.com', 'google-analytics.com', 'googleadservices.com', 'doubleclick.net', 'connect.facebook.net'].some(function (domain) {
+                        return src.indexOf(domain) !== -1;
+                    });
+                    if (!shouldIgnore) {
+                        node.setAttribute('crossorigin', 'anonymous')
+                    }
+                }
+            }
+        </script>
+
+        <title>Home | grafiya 2K19</title>
+            <link rel="canonical" href="//abhinavbharadwajr.github.io/festivedegrafiya" />
+            <meta property="og:title" content="Home | GRAFIYA2K19" />
+            <meta property="og:url" content="//abhinavbharadwajr.github.io/festivedegrafiya" />
+            <meta property="og:site_name" content="Grafiya de Festival" />
+            <meta property="og:type" content="Website" />
+
+    </head>
+
+    <body class="prewarmup">
+        <script type="text/javascript">
+            var htmlClassList = document.documentElement.classList;
+            var clientSideRender = false;
+        </script>
+
+        <div id="SITE_Container">
+            <div class="nnop visual-focus-on" style="position:relative;">
+                <div id="SITE_BACKGROUD" style="height: auto; top: 50px;">
+            </div>
+        </div>
+    </body>
+
+</html>
